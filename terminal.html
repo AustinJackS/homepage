@@ -1,11 +1,32 @@
 <html>
+    <script>
+        function writeto(text) {
+            document.getElementById("res").innerHTML += text+'<br>';
+        }
+        function interp(cmd) {
+            cmds = cmd.split(' ');
+            if(cmds[0] == 'echo') {
+               writeto(cmds[1]);
+            }
+        }
+    </script>
 <body style="background: black; color: #00e700;">
-<input style="
+    <p id="res">Output:</p>
+<input id="inp" style="
     background: black;
     border: none;
     color: #00e700;
     outline: none;
     width:100%;
-"></input>
+">
+    <script>
+        document.getElementById("inp")
+    .addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode == 13) {
+        interp(document.getElementById("inp").value);
+    }
+});
+    </script>
 </body>
 </html>
