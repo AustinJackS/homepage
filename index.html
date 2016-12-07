@@ -1,12 +1,12 @@
 <html>
 	<style>
-		body:fullscreen {
+		#body:fullscreen {
     background-color: rgba(255,255,255,0);
 }
-body:-webkit-full-screen {
+#body:-webkit-full-screen {
     background-color: rgba(255,255,255,0);
 }
-body:-moz-full-screen {
+#body:-moz-full-screen {
     background-color: rgba(255,255,255,0);
 }
 	</style>
@@ -15,6 +15,7 @@ body:-moz-full-screen {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;">
+	<div id="body">
 <script>
 function fsc() {var i = document.body;
 
@@ -29,6 +30,7 @@ function fsc() {var i = document.body;
 	  i.msRequestFullscreen();
 }}
 </script>
-  <button onclick="fsc()">fullscreen</button>
+  <button onclick="fsc()">fullscreen!</button>
+	</div>
 </body>
 </html>
