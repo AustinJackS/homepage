@@ -1,6 +1,6 @@
 {
   "bg-perm":"https://austinjacks.github.io/stable1/bg.user.js",
-  "tampermonkey:"https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en",
+  "tampermonkey":"https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en",
   "home-new-tab":"https://chrome.google.com/webstore/detail/home-new-tab-page/ehhkfhegcenpfoanmgfpfhnmdmflkbgk?hl=en",
   "replace-new-tab":"https://chrome.google.com/webstore/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna?hl=en"
 }
