@@ -1,5 +1,3 @@
 {
-  'bg-perm' : 'https://austinjacks.github.io/stable1/bg.user.js'
-  
-  
+  "bg-perm":"https://austinjacks.github.io/stable1/bg.user.js"
 }
