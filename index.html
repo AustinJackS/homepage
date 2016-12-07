@@ -1,4 +1,19 @@
 <html>
 <body>
+<script>
+function fsc() {var i = document.body;
+
+// go full-screen
+  if (i.requestFullscreen) {
+	  i.requestFullscreen();
+  } else if (i.webkitRequestFullscreen) {
+	  i.webkitRequestFullscreen();
+  } else if (i.mozRequestFullScreen) {
+	  i.mozRequestFullScreen();
+  } else if (i.msRequestFullscreen) {
+	  i.msRequestFullscreen();
+}}
+</script>
+  <button onclick="fsc()">fullscreen</button>
 </body>
-<?html>
+</html>
