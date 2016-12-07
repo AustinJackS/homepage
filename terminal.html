@@ -5,7 +5,7 @@
         }
         function interp(cmd) {
             cmds = cmd.split(' ');
-            if(cmd.split('echo ')[0] == 'echo') {
+            if(cmd.split('echo ')[0] == '') {
                writeto(cmd.split('echo ')[1]);
             }
         }
