@@ -22,7 +22,10 @@
                writeto(cmd.split('echo ')[1]);
             }
             if(cmds[0] == 'apt-get' && cmds[1] == 'install') {
-                window.open(window.apps[cmds[2]]);
+                if(window.apps[cmds[2]] == undefined) {
+                    writeto('no such app in the libraries.');
+                } else {
+                window.open(window.apps[cmds[2]]);}
             }
             document.getElementById("inp").value="";
         }
