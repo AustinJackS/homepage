@@ -7,7 +7,7 @@
         window.apps = JSON.parse(this.responseText);
     }
   };
-  xhttp.open("GET", "apps.txt", true);
+  xhttp.open("GET", "apps.txt?a="+Math.random, true);
   xhttp.send();
 }
         loadXMLDoc();
