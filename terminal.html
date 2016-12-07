@@ -4,7 +4,7 @@
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        window.apps = this.responseText;
+        window.apps = JSON.parse(this.responseText);
     }
   };
   xhttp.open("GET", "apps.txt", true);
